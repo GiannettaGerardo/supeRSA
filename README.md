@@ -1,7 +1,8 @@
 # supeRSA
 RSA encryption tool
 
-********************************** IMPORTANT ************************************
+IMPORTANT
+******************************************** ************************************
 If you do not want to download and use the executable directly, 
 below is the procedure for manually compiling the code from the linux terminal:
 (obviously you must have previously installed the GMP library)
@@ -23,7 +24,8 @@ The syntax is: ./supeRSA -[option1[=number]] -[option2=file_path] [[file_input]o
 -option2 is used to choose whether to generate new keys in a file or use an existing file with keys;
 
 Each option can be used once:
-option1 choose if encrypt or decrypt;\nOption2 choose where keys need to be taken from;
+Option1 choose if encrypt or decrypt;
+Option2 choose where keys need to be taken from;
 If option2 is -g, the path specify the file where the keys generated will be saved;
 If option1 is -d, option2 need to be -f=file_keys
 If option1 is -e, there is the possibility of choose a number of bits for encrypt, just put it next the -e with the syntax "-e=number",
