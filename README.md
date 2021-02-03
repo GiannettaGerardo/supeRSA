@@ -37,28 +37,29 @@ If there isn't a file_output path, standard file_output will be created in the d
 The files will be: outputE_supeRSA.txt if option1 is -e
                    outputD_supeRSA.txt if option1 is -d
 Do not use ~ (to indicate user on linux distributions) symbol in the file path.
--------------------------------------------------------------------------------
+*******************************************************************************
 number of bits: -e allows you to choose the number of digits to encrypt with;
                 if the number is omitted, automatic it is set to 640;
 *recommended range (prefers speed):             [300 - 500]
 *recommended range (good speed - safety ratio): [600 - 750]
 *recommended range (prefers safety):            [1000 - 1000+]
--------------------------------------------------------------------------------
+*******************************************************************************
 option1: --help            shows description and options
          -e                encrypt a file
          -e=bit            encrypt a file with this number of bit
          -d                decrypt a file
--------------------------------------------------------------------------------
+*******************************************************************************
 option2: -g=path_file     generate keys in the file "path_file";
                           do not use . or ./
          -f=path_file     take keys from a file "path_file";
                           do not use . or ./
--------------------------------------------------------------------------------
-examples: ./supeRSA -e -f=keys.txt home/user/Desktop/file.txt saveEncryptedData.txt
-          ./supeRSA -d -f=/home/user/keys.txt file.txt /media/usb/saveDecryptedData.txt
-          ./supeRSA -e=340 -g=/home/user/saveKeys /home/user/file.txt
-          ./supeRSA -d -f=/home/user/keys.txt file.txt
-          ./supeRSA -e -g=keys.txt -s='encrypt this' file_output.txt
-          ./supeRSA -e=1024 -g=keys.txt -s='hello world'
+*******************************************************************************
+examples: 
+./supeRSA -e -f=keys.txt home/user/Desktop/file.txt saveEncryptedData.txt
+./supeRSA -d -f=/home/user/keys.txt file.txt /media/usb/saveDecryptedData.txt
+./supeRSA -e=340 -g=/home/user/saveKeys /home/user/file.txt
+./supeRSA -d -f=/home/user/keys.txt file.txt
+./supeRSA -e -g=keys.txt -s='encrypt this' file_output.txt
+./supeRSA -e=1024 -g=keys.txt -s='hello world'
           
           
