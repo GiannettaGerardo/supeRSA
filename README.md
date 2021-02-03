@@ -1,12 +1,18 @@
 # supeRSA
 RSA encryption tool
 
-********************************** IMPORTANT **********************************
+********************************** IMPORTANT ************************************
 If you do not want to download and use the executable directly, 
 below is the procedure for manually compiling the code from the linux terminal:
 (obviously you must have previously installed the GMP library)
 gcc supeRSA.c generics.c rsa_gmp.c -o supeRSA -lgmp
-*******************************************************************************
+*********************************************************************************
+If you want to use the executable directly, you will have to download it and 
+you will have to set the permissions for execution (only linux OS):
+chmod +rx supeRSA
+*********************************************************************************
+This program has been tested on ubuntu 20.04 and Windows 10
+*********************************************************************************
 
 Author: Gerardo Giannetta - Italy - Date: 2020 - Version: 1.1;
 supeRSA is a program writed in C to encrypt or decrypt (with RSA) an entire file or directly a string.
